@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+
+        <title>Learning MDL</title>
+
+        <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.indigo-pink.min.css">
+        <script src="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.min.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <style>
+            body{
+                padding: 20px;
+            }
+            .header{
+                color: #666;
+            }
+            .container{
+                margin: 0 auto;
+                width: 800px;
+            }
+
+              #p1, #p2, #p3{
+                margin-bottom: 80px;
+              }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+
+            <h1 class="header">Menu (Dropdown)</h1>
+
+            <h5 class="header">Normal menu</h5>
+
+                <button id="m1" class="mdl-button mdl-js-button mdl-button--icon">
+                    <i class="material-icons">more_vert</i>
+                </button>
+
+                <ul class="mdl-menu mdl-js-menu" for="m1">
+                    <li class="mdl-menu__item">Sweet</li>
+                    <li class="mdl-menu__item">Cute</li>
+                    <li class="mdl-menu__item">Awesome</li>
+                    <li class="mdl-menu__item">Crazy</li>
+                </ul>
+
+
+                
+                
+            <h5 class="header">Normal menu WITH RIPPLE</h5>
+
+                <button id="m2" class="mdl-button mdl-js-button mdl-button--icon">
+                    <i class="material-icons">more_vert</i>
+                </button>
+
+                <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect" for="m2">
+                    <li class="mdl-menu__item">Sweet</li>
+                    <li class="mdl-menu__item">Cute</li>
+                    <li class="mdl-menu__item">Awesome</li>
+                    <li class="mdl-menu__item">Crazy</li>
+                </ul>
+
+
+
+
+                <h5 class="header">Normal menu bottom-right</h5>
+
+                <button id="m3" class="mdl-button mdl-js-button mdl-button--icon">
+                    <i class="material-icons">more_vert</i>
+                </button>
+
+                <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="m3">
+                    <li class="mdl-menu__item">Sweet</li>
+                    <li class="mdl-menu__item">Cute</li>
+                    <li class="mdl-menu__item">Awesome</li>
+                    <li class="mdl-menu__item">Crazy</li>
+                </ul>
+        </div>
+
+
+    </body>
+</html>

@@ -1,0 +1,128 @@
+<html>
+
+<head>
+    <!-- Material Design Lite -->
+    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.min.js"></script>
+    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.indigo-pink.min.css">
+    <!-- Material Design icon font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body style="padding: 5rem 0px;">
+    <h1>Cards</h1>
+
+    <h5>Cards deept</h5>
+    <div class="mdl-card">
+        <div class="mdl-card__title">
+            <h2 class="mdl-card__title-text">none</h2>
+        </div>
+    </div>
+    <div class="mdl-card mdl-shadow--1dp">
+        <div class="mdl-card__title">
+            <h2 class="mdl-card__title-text">mdl-shadow--1dp</h2>
+        </div>
+    </div>
+    <div class="mdl-card mdl-shadow--2dp">
+        <div class="mdl-card__title">
+            <h2 class="mdl-card__title-text">mdl-shadow--2dp</h2>
+        </div>
+    </div>
+    <div class="mdl-card mdl-shadow--3dp">
+        <div class="mdl-card__title">
+            <h2 class="mdl-card__title-text">mdl-shadow--3dp</h2>
+        </div>
+    </div>
+    <div class="mdl-card mdl-shadow--4dp">
+        <div class="mdl-card__title">
+            <h2 class="mdl-card__title-text">mdl-shadow--4dp</h2>
+        </div>
+    </div>
+
+
+
+
+    <h5>Card normal</h5>
+    <div class="mdl-card">
+        <!-- Header title -->
+        <div class="mdl-card__title">
+            <h2 class="mdl-card__title-text">Title</h2>
+        </div>
+
+        <!-- Card media (images, video, etc) -->
+        <div class="mdl-card__media">
+            <img src="https://picsum.photos/id/237/400/300" alt="Google">
+        </div>
+
+        <!-- Card content description -->
+        <div class="mdl-card__supporting-text">
+            This is a description for this image.
+        </div>
+    </div>
+
+
+    <h5>Card actions</h5>
+    <div class="mdl-card mdl-shadow--1dp">
+        <!-- Header title -->
+        <div class="mdl-card__title">
+            <h2 class="mdl-card__title-text">Title</h2>
+        </div>
+
+        <!-- Card media (images, video, etc) -->
+        <div class="mdl-card__media">
+            <img src="https://picsum.photos/id/237/400/300" alt="Google">
+        </div>
+
+        <!-- Card content description -->
+        <div class="mdl-card__supporting-text">
+            This is a description for this image. Our action also has a border and is bigger.
+        </div>
+
+        <!-- Card actions -->
+        <div class="mdl-card__actions mdl-card--border">
+            <button class="mdl-button mdl-js-button mdl-button--accent mdl-js-ripple-effect">Adopt</button>
+        </div>
+    </div>
+
+
+
+    <h5>Card actions</h5>
+    <div class="mdl-card mdl-shadow--4dp mdl-custom-card__500px">
+        <!-- Header title -->
+        <div class="mdl-card__title mdl-custom-card-image__background">
+            <h2 class="mdl-card__title-text">Title</h2>
+        </div>
+
+        <!-- Card content description -->
+        <div class="mdl-card__supporting-text">
+            This is a description for this image.
+        </div>
+
+        <!-- Card actions -->
+        <div class="mdl-card__actions mdl-card--border">
+            <button class="mdl-button mdl-js-button mdl-button--accent mdl-js-ripple-effect">Adopt</button>
+        </div>
+    </div>
+
+</body>
+
+<style>
+    body{
+        background-color: white;
+    }
+    .mdl-custom-card-image__background{
+        background-image: url(https://picsum.photos/id/237/400/300);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 150px;
+        color: white;
+    }
+
+    .mdl-custom-card__500px{
+        width: 500px;
+    }
+
+    .mdl-card{
+        margin-bottom: 2rem;
+    }
+</style>
+</html>

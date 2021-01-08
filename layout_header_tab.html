@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Learning MDL</title>
+
+    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.indigo-pink.min.css">
+    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+        body {
+            padding: 20px;
+        }
+
+        .header {
+            color: #666;
+        }
+
+        .container {
+            margin: 0 auto;
+            width: 800px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="mdl-layout mdl-js-layout">
+
+        <!-- Header navbar -->
+        <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row">
+                <div class="mdl-layout-title">
+                    Tab header
+                </div>
+            </div>
+
+
+                <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+                    <a href="#tab-1" class="mdl-layout__tab is-active">Tab 1</a>
+                    <a href="#tab-2" class="mdl-layout__tab">Tab 2</a>
+                    <a href="#tab-3" class="mdl-layout__tab">Tab 3</a>
+                    <a href="#tab-4" class="mdl-layout__tab">Tab 4</a>
+                </div>
+        </header>
+
+        <!-- Drawer (side bar) -->
+
+        <div class="mdl-layout__drawer">
+            <div class="mdl-layout-title">
+                Tab header
+            </div>
+        </div>
+
+        <!-- Main content -->
+        <main class="mdl-layout__content">
+            <section class="mdl-layout__tab-panel is-active" id="tab-1">tab 1</section>
+            <section class="mdl-layout__tab-panel" id="tab-2">tab 2</section>
+            <section class="mdl-layout__tab-panel" id="tab-3">tab 3</section>
+            <section class="mdl-layout__tab-panel" id="tab-4">tab 4</section>
+        </main>
+    </div>
+
+</body>
+
+</html>

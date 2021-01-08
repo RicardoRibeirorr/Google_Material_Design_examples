@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+
+        <title>Learning MDL</title>
+
+        <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.indigo-pink.min.css">
+        <script src="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.min.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <style>
+            body{
+                padding: 20px;
+            }
+            .header{
+                color: #666;
+            }
+            .container{
+                margin: 0 auto;
+                width: 800px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+
+            <h1 class="header" >Material Design Togglers</h1>
+
+            <label for="c1" class="mdl-checkbox mdl-js-checkbox ">
+                <input id="c1" type="checkbox" class="mdl-checkbox__input">
+                <span class="mdl-checkbox__label">Checkbox</span>
+            </label>
+
+            <label for="c2" class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                <input id="c2" type="checkbox" class="mdl-checkbox__input">
+                <span class="mdl-checkbox__label">Checkbox with ripple effect</span>
+            </label>
+
+
+            <label for="s1" class="mdl-switch mdl-js-switch ">
+                <input id="s1" type="checkbox" class="mdl-switch__input">
+                <span class="mdl-switch__label">Switch (checkbox)</span>
+            </label>
+
+            <label for="s2" class="mdl-switch mdl-js-switch mdl-js-ripple-effect">
+                <input id="s2" type="checkbox" class="mdl-switch__input">
+                <span class="mdl-switch__label">Switch (checkbox) with ripple effect</span>
+            </label>
+
+            <label for="i1" class="mdl-icon-toggle mdl-js-icon-toggle">
+                <input id="i1" type="checkbox" class="mdl-icon-toggle__input">
+                <span class="mdl-icon-toggle__label material-icons">star</span>
+            </label>
+
+            <label for="r1" class="mdl-radio mdl-js-radio">
+                <input id="r1" type="radio" class="mdl-radio__button" name="radio_group_1">
+                <span class="mdl-radio__label">radio </span>
+            </label>
+
+            <label for="r2" class="mdl-radio mdl-js-radio mdl-js-ripple-effect">
+                <input id="r2" type="radio" class="mdl-radio__button" name="radio_group_1">
+                <span class="mdl-radio__label">radio with ripple effect</span>
+            </label>
+
+
+            <h2>Disable state</h2>
+            <label for="r2" class="mdl-radio mdl-js-radio mdl-js-ripple-effect">
+                <input id="r2" type="radio" class="mdl-radio__button" name="radio_group_1" checked disabled>
+                <span class="mdl-radio__label">radio with ripple effect</span>
+            </label>
+
+        </div>
+
+
+    </body>
+</html>

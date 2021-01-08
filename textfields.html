@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+
+        <title>Learning MDL</title>
+
+        <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.indigo-pink.min.css">
+        <script src="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.min.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <style>
+            body{
+                padding: 20px;
+            }
+            .header{
+                color: #666;
+            }
+            .container{
+                margin: 0 auto;
+                width: 800px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+
+            <h1 class="header" >Material Design TextFields</h1>
+
+            <div class="mdl-textfield mdl-js-textfield">
+                <input type="text" class="mdl-textfield__input" id="name1">
+                <label for="name1" class="mdl-textfield__label">Normal input text</label>
+            </div>
+
+            <br><br>
+
+            <div class="mdl-textfield mdl-js-textfield">
+                <input type="text" class="mdl-textfield__input" id="nam2"  pattern="-?[0-9]*(\.[0-9]+)?">
+                <label for="nam2" class="mdl-textfield__label">Number input with error show (write text to test the error)</label>
+                <span class="mdl-textfield__error">Input is not a number</span>
+            </div>
+
+            <br><br>
+
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input type="text" class="mdl-textfield__input" id="nam3">
+                <label for="nam3" class="mdl-textfield__label">Floating label</label>
+            </div>
+
+            <br><br>
+
+            <div class="mdl-textfield mdl-js-textfield">
+                <textarea rows="3" class="mdl-textfield__input" id="name4"></textarea>
+                <label for="name4" class="mdl-textfield__label">Textarea</label>
+            </div>
+
+            <br><br>
+
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+                <label for="expandable_1" class="mdl-button mdl-js-button mdl-button--icon"><i class="material-icons">search</i></label>
+                <div class="mdl-textfield__expandable-holder">
+                    <input id="expandable_1" type="text" class="mdl-textfield__input">
+                    <label for="expandable_1" class="mdl-textfield__label">Expandable input</label>
+                </div>
+            </div>
+
+        </div>
+
+
+    </body>
+</html>

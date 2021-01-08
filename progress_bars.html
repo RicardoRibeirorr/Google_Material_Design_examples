@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+
+        <title>Learning MDL</title>
+
+        <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.indigo-pink.min.css">
+        <script src="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.min.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <style>
+            body{
+                padding: 20px;
+            }
+            .header{
+                color: #666;
+            }
+            .container{
+                margin: 0 auto;
+                width: 800px;
+            }
+
+              #p1, #p2, #p3{
+                margin-bottom: 80px;
+              }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+
+            <h1 class="header" >Material Design Progress Bars</h1>
+
+            <h5 class="header">Default Progress Bar</h5>
+
+                <div id="p1" class="mdl-progress mdl-js-progress"></div>
+
+
+
+            <h5 class="header">Indeterminate Progress Bar</h5>
+
+                <div id="p2" class="mdl-progress mdl-js-progress mdl-progress__indeterminate"></div>
+
+
+            <h5 class="header">Buffering Progress Bar</h5>
+
+                <div id="p3" class="mdl-progress mdl-js-progress "></div>
+
+
+        </div>
+
+
+        <script>
+
+            document.querySelector('#p1').addEventListener('mdl-componentupgraded', function() {
+                this.MaterialProgress.setProgress(44);
+            });
+
+            document.querySelector('#p3').addEventListener('mdl-componentupgraded', function() {
+                this.MaterialProgress.setProgress(33);
+                this.MaterialProgress.setBuffer(60);
+            });
+
+        </script>
+
+
+    </body>
+</html>
